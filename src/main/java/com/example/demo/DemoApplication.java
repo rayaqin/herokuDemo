@@ -9,6 +9,7 @@ import org.springframework.stereotype.*;
 @SpringBootApplication
 public class DemoApplication {
 
+	@CrossOrigin(origins = "http://localhost:3000")
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
