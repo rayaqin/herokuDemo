@@ -27,10 +27,10 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	private static int[] getRandomNumbers(int a, int b) {
-		int[] result = new int[b];
+	private static String getRandomNumbers(int a, int b) {
+		String result = "";
 		for(int i=0; i<b; i++){
-			result[i] = a + (int) ((1 - a) * Math.random());
+			result += String.valueOf((int)(a * Math.random())) + " ";
 		}
 		return result;
 	}
